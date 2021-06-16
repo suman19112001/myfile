@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY GOOGLE CLONE</title>
+</head>
+<style>
+    /* body{
+        height: 400px;
+        width: 950px;
+        margin: auto;
+        padding: 23px 12px;
+    } */
+    section {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    section header {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        padding: 20px;
+    }
+
+    section header ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section header ul li {
+        list-style: none;
+        margin-left: 20px;
+    }
+
+    section header ul li a {
+        color: rgb(12, 155, 320);
+        text-decoration: none;
+        font-size: 15px;
+    }
+
+    section header ul li button {
+        background-color: blue;
+        border-radius: 4px;
+        padding: 8px 14px;
+        font-weight: 700px;
+        cursor: pointer;
+    }
+
+    section .main {
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section .main .searchbox {
+        position: relative;
+        margin: 20px;
+        width: 100%;
+    }
+
+    section .main .searchbox .search {
+        width: 100%;
+        padding: 13px;
+        padding-left: 60px;
+        padding-right: 60px;
+        border-radius: 30px;
+        border: 2px solid grey;
+        font-size: 15px;
+        outline: none;
+    }
+    section .main .buttons{
+        margin-top:20px ;
+    }
+    section .main .buttons button{
+        margin: 0px 5px;
+        padding: 12px 20px;
+        color: blueviolet;
+        font-size: 14px;
+        /* border: none; */
+        cursor: pointer;
+        border-radius: 4px;
+        border: 2px solid greenyellow;
+        outline: none;
+    }
+    section .main .buttons button:hover{
+        background-color: aqua;
+    }
+    section .footer{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: lightgrey;
+    }
+    section .footer .row{
+        padding: 5px 10px;
+        border-top: 1px solid rgba(0, 0, 0, 0.05);
+        margin-left: 25px;
+    }
+    section .footer .row.row2{
+        display: flex;
+        justify-content: space-between;
+        /* margin-right: 25px ; */
+    }
+    section .footer .row.row2 ul{
+        display: flex;
+        /* margin-left: 25px; */
+    }
+    section .footer .row.row2 ul li{
+        list-style: none;
+        /* margin-left: 25px; */
+    }
+    section .footer .row.row2 ul li a{
+        text-decoration: none;
+        font-size: 15px;
+        color: black;   
+        margin-right: 25px; 
+    }
+    section .footer .row.row2 ul:nth-child(2) li a{
+        text-decoration: none;
+        font-size: 15px;
+        color: black;   
+        margin-right: 0px; 
+        margin-left: 25px; 
+    }
+
+    /* section .main .searchbox .icons{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        display: flex;
+        padding: 12px 20px;
+        justify-content: space-between;
+        align-items: center;
+        pointer-events: none;
+    } */
+
+</style>
+
+<body>
+    <!-- <img src="https://www.sitepronews.com/wp-content/uploads/2016/07/Google.png" alt=""> -->
+    <section>
+        <header>
+            <ul>
+                <li><a href="https://mail.google.com" target="_blank">Gmail</a></li>
+                <li><a href="https://images.google.com/" target="_blank">Images</a></li>
+                <li><button>
+                        <div class="btn">Sign in</div>
+                    </button></li>
+            </ul>
+        </header>
+        <div class="main">
+            <img src="https://blog.hubspot.com/hs-fs/hubfs/The%20Secret%20History%20of%20the%20Google%20Logo-1.jpeg?width=504&name=The%20Secret%20History%20of%20the%20Google%20Logo-1.jpeg"
+                alt="">
+            <div class="searchbox">
+                <input type="text" class="search" placeholder="Search Here">
+                <!-- <div class="icons">
+                    <div><img
+                            src="https://image.shutterstock.com/image-vector/magnifying-glass-icon-vector-search-260nw-1727624158.jpg"
+                            alt=""></div>
+                    <div><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmgMpFsdJWJXtBXjRmJMViMf-IFMX-hUNVMA&usqp=CAU"
+                            alt=""></div>
+                </div> -->
+            </div>
+            <div class="buttons">
+                <button>Google Search</button>
+                <button>I am feeling lucky</button>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="row row1">
+                <p class="Country">INDIA</p>
+            </div>
+            <div class="row row2">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Advertising</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">How search works</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
